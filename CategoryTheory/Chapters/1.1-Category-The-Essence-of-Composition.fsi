@@ -33,3 +33,16 @@ h . (g . f) == (h . g) . f == h . g . f
 **)
 
 val h: 'c -> 'd
+
+(**
+
+identity function
+
+```
+id :: a -> a
+id x = x
+```
+
+**)
+
+val id: 'a -> 'a

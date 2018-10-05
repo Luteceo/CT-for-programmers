@@ -44,3 +44,16 @@ let comp3 f g h = f >> (g >> h)
 comp1 f g h 2
 comp2 f g h 2
 comp3 f g h 2
+
+(**
+
+identity function
+
+```
+id :: a -> a
+id x = x
+```
+
+**)
+
+let id a = a
