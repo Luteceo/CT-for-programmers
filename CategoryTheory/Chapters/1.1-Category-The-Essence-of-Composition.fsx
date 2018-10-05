@@ -57,3 +57,18 @@ id x = x
 **)
 
 let id a = a
+
+(**
+
+```
+f . id == f
+id . f == f
+```
+
+**)
+
+// id >> f = f >> id = f
+
+let idCheck1 = id >> f
+let idCheck2 = f >> id
+let idCheck3 = f
