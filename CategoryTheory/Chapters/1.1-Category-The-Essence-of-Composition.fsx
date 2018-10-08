@@ -72,3 +72,10 @@ id . f == f
 let idCheck1 = id >> f
 let idCheck2 = f >> id
 let idCheck3 = f
+
+(**
+
+A category consists of objects and arrows (morphisms). Arrows can be composed, and the composition is associative. 
+Every object has an identity arrow that serves as a unit under composition.
+
+**)
