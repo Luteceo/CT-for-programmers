@@ -6,6 +6,7 @@
 
     <ItemGroup>
       <None Include="Chapters\1.1-Category-The-Essence-of-Composition.fsx" />
+      <None Include="Solutions\Chapter1.fsx" />
     </ItemGroup>
 
     <ItemGroup>
