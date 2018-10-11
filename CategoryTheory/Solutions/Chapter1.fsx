@@ -14,3 +14,15 @@ let compose f g a = g(f(a))
 
 // compose two functions
 let g = compose (fun (x: int) -> float(x) * 2.0) (fun x -> x.ToString())
+
+(**
+    Write a program that tries to test that your composition function respects identity.
+**)
+
+let testFunction a = a + 1
+
+let h1 = compose id testFunction
+let h2 = compose testFunction id
+
+h1 4
+h2 4
