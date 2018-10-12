@@ -26,3 +26,11 @@ let h2 = compose testFunction id
 
 h1 4
 h2 4
+
+(**
+    Q: Is the world-wide web a category in any sense? Are links morphisms?
+    
+    A: If there is a link from page A to page B and a link from page B to page C,
+    it doesn't mean there is link from page A to page C
+**)
+
