@@ -39,4 +39,10 @@ h2 4
     
     A: Well it would mean that I'm also a frend on mine (like identity function)
 **)
+
+(**
+    Q: When is a directed graph a category?
+    
+    A: When each node has also an edge to itself
+**)
     
