@@ -50,15 +50,4 @@ let eq a c = g(f(a)) = c
     
     A: When each node has also an edge to itself
 **)
-
-(*let (<.>) (g : 'b -> 'c) (f : 'a -> 'b) = f >> g
-
-let test =
-    let a = 1
-    let f = (+) 1
-    let g = string
-    let eqs c = g(f(a)) = c
-    a |> (id <.> g <.> f) |> eqs &&
-    a |> (g <.> id <.> f) |> eqs &&
-    a |> (g <.> f <.> id) |> eqs*)
     
