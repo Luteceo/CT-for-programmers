@@ -34,3 +34,9 @@ h2 4
     it doesn't mean there is link from page A to page C
 **)
 
+(**
+    Q: Is Facebook a category, with people as objects and friendships as morphisms?
+    
+    A: Well it would mean that I'm also a frend on mine (like identity function)
+**)
+    
