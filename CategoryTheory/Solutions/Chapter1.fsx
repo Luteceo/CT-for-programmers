@@ -10,22 +10,25 @@ let id a = a
     It takes two functions as arguments and returns a function that is their composition.
 **)
 
-let compose f g a = g(f(a))
+// let say composition operator
+// let (<.>) (g : 'b -> 'c) (f : 'a -> 'b) = f >> g
+let (<.>) (f: 'a -> 'b) (g: 'b -> 'c) a = g(f(a))
 
 // compose two functions
-let g = compose (fun (x: int) -> float(x) * 2.0) (fun x -> x.ToString())
+let composed = (fun (x: int) -> float(x) * 2.0) <.> (fun (x: float) -> string(x))
 
 (**
     Write a program that tries to test that your composition function respects identity.
 **)
 
-let testFunction a = a + 1
+let f = (+) 1
+let g = string
+let eq a c = g(f(a)) = c
+4 |> (id <.> f <.> g) |> eq 4 &&
+4 |> (f <.> id <.> g) |> eq 4 &&
+4 |> (f <.> g <.> id) |> eq 4
 
-let h1 = compose id testFunction
-let h2 = compose testFunction id
 
-h1 4
-h2 4
 
 (**
     Q: Is the world-wide web a category in any sense? Are links morphisms?
@@ -37,7 +40,9 @@ h2 4
 (**
     Q: Is Facebook a category, with people as objects and friendships as morphisms?
     
-    A: Well it would mean that I'm also a frend on mine (like identity function)
+    A: Well it would mean that I'm also a frend on mine (like identity function). Although if we see relationship 
+       as beeing able to see someone private data it could hold because I can see mine too.
+       But also A friend of my friend is not necessarily my friend so the composability doesn't hold
 **)
 
 (**
@@ -45,4 +50,15 @@ h2 4
     
     A: When each node has also an edge to itself
 **)
+
+(*let (<.>) (g : 'b -> 'c) (f : 'a -> 'b) = f >> g
+
+let test =
+    let a = 1
+    let f = (+) 1
+    let g = string
+    let eqs c = g(f(a)) = c
+    a |> (id <.> g <.> f) |> eqs &&
+    a |> (g <.> id <.> f) |> eqs &&
+    a |> (g <.> f <.> id) |> eqs*)
     
