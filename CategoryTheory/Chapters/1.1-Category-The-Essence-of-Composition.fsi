@@ -1,4 +1,4 @@
-module CategoryTheory
+module CategoryTheory1
 (**
 # 1.1 Arrows as functions
 

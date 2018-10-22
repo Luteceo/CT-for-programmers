@@ -16,6 +16,7 @@
 
     <ItemGroup>
       <Compile Include="Chapters\1.1-Category-The-Essence-of-Composition.fsi" />
+      <Compile Include="Chapters\1.2-Types-And-Functions.fsi" />
     </ItemGroup>
 
 </Project>
