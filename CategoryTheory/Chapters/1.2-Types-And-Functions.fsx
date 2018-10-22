@@ -37,4 +37,16 @@ f x = undefined
 ```
 
 **)
+
 let f (x: bool) = raise (NotImplementedException())
+
+(**
+
+```
+f :: Bool -> Bool
+f = undefined
+```
+
+**)
+
+let (f':bool -> bool) = raise (NotImplementedException())
