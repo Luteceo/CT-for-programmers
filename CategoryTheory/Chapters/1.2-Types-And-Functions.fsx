@@ -50,3 +50,19 @@ f = undefined
 **)
 
 let (f':bool -> bool) = raise (NotImplementedException())
+
+(**
+
+2.4 Why Do We Need a Mathematical Model?
+
+**)
+
+(**
+
+```
+fact n = product [1..n]
+```
+
+**)
+
+let fact n = [1..n] |> List.fold (*) 1
