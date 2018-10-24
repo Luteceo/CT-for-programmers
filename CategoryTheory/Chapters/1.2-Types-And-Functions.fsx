@@ -66,3 +66,19 @@ fact n = product [1..n]
 **)
 
 let fact n = [1..n] |> List.fold (*) 1
+
+(**
+
+2.6 Examples of Types
+
+**)
+
+(**
+
+```
+absurd :: Void -> a
+```
+
+This cannot be done in F# because there is no type related to "Bottom Type" which has no possible value
+
+**)
